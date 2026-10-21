@@ -1,6 +1,6 @@
 # DAA-Project-Algorithm-Binary-Search-Student-Record-Sorting
 A browser-based DAA project for managing student records and visualizing sorting and searching algorithms. Compare algorithm performance, explore time and space complexity, and manage records with a simple responsive interface.
-# CampusIndex — Student Record Sorting & Searching System
+# CampusIndex — Student Record Sorting & Searching System.
 
 A browser-based Design and Analysis of Algorithms project for managing student records and learning how classic sorting and searching algorithms work. It uses HTML, CSS, and dependency-free JavaScript. Student data is stored in the browser with `localStorage`.
 
