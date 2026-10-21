@@ -1,9 +1,13 @@
 # DAA-Project-Algorithm-Binary-Search-Student-Record-Sorting
 A browser-based DAA project for managing student records and visualizing sorting and searching algorithms. Compare algorithm performance, explore time and space complexity, and manage records with a simple responsive interface.
 Student Name: Jenil Patel
+
 Enrollment Number: 12402080601053
+
 Department / Division: Information Technology (IT-A)
+
 Semester: V
+
 **Link To test the Project:**C:/Users/patel/Documents/Codex/2026-10-21/https-github-com-vishrut2105-daa-project/outputs/index.html
 # CampusIndex — Student Record Sorting & Searching System.
 
