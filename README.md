@@ -4,6 +4,8 @@ A browser-based Design and Analysis of Algorithms project for managing student r
 
 **GitHub:** [@JenilPatel0112](https://github.com/JenilPatel0112)
 
+Project Link**(https://jenilpatel0112.github.io/DAA-Project-Algorithm-Binary-Search-Student-Record-Sorting/)
+
 ## Features
 
 - Add, edit, delete, filter, and sort student records.
