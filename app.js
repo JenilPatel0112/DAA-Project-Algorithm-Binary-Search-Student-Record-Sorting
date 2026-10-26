@@ -4,13 +4,13 @@
   const seed = [
     ['Aanya Mehta','CS2024001','Computer Science','Third Year',9.12,91],['Arjun Patel','IT2024002','Information Technology','Third Year',8.74,87],['Diya Shah','EC2024003','Electronics','Second Year',9.48,95],['Kabir Nair','CS2024004','Computer Science','Fourth Year',8.21,82],['Mira Iyer','ME2024005','Mechanical','Third Year',9.03,90],['Rohan Desai','IT2024006','Information Technology','Second Year',7.86,79],['Sara Khan','CS2024007','Computer Science','First Year',9.66,97],['Vivaan Rao','CV2024008','Civil','Fourth Year',8.53,85],['Anaya Joshi','EC2024009','Electronics','Third Year',8.91,89],['Ishaan Gupta','CS2024010','Computer Science','Second Year',7.98,80],['Tara Menon','IT2024011','Information Technology','Fourth Year',9.31,93],['Reyansh Shah','ME2024012','Mechanical','First Year',8.15,81]
   ].map(([name,id,department,year,cgpa,marks])=>({name,id,department,year,cgpa,marks}));
-  let students = loadStudents();
   let sortState = {items:[],running:false,token:0};
   let toastTimer;
   const $ = id => document.getElementById(id);
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const initials = name => name.split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase();
   const loadStudents = () => { try { const value=JSON.parse(localStorage.getItem(STORAGE_KEY)); return Array.isArray(value) ? value : seed.map(x=>({...x})); } catch { return seed.map(x=>({...x})); } };
+  let students = loadStudents();
   const save = () => { localStorage.setItem(STORAGE_KEY,JSON.stringify(students)); updateAll(); };
   const toast = message => { const el=$('toast'); el.textContent=message; el.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>el.classList.remove('show'),2600); };
   const studentCell = s => `<div class="student-cell"><span class="student-avatar">${esc(initials(s.name))}</span><span><span class="student-name">${esc(s.name)}</span><span class="student-email">${esc(s.year)}</span></span></div>`;
